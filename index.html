@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All the content is in the console</h1>
+    <script>
+        function numbersonly (arr) {
+            var newarr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (typeof arr [i] === "number") {
+                    newarr.push (arr [i]);
+                }
+            }
+            console.log (newarr);
+        }
+        numbersonly ([1, "apple", -3, "orange", 0.5])
+    </script>
+</body>
+</html>
